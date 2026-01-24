@@ -26,7 +26,7 @@ var server;
 // the HTTPS server
 var httpsServer;
 // the ip address
-var ip = localOnly ? "127.0.0.1" : utils.getIPAddress();
+var ip = localOnly ? "0.0.0.0" : utils.getIPAddress();
 // the segment for identifying the rest api
 var apiref = "api";
 
