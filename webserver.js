@@ -26,6 +26,7 @@ var server;
 // the HTTPS server
 var httpsServer;
 // the ip address
+// listen on 0.0.0.0 for docker or when accessing from an (android) emulator, otherwise use local address
 var ip = localOnly ? "0.0.0.0" : utils.getIPAddress();
 // the segment for identifying the rest api
 var apiref = "api";
