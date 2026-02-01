@@ -265,7 +265,7 @@ exports.handleMultipartRequest = function(req, res, filepath, uripath, ondone) {
 
     if (utils.startsWith(contentType, "multipart/form-data")) {
         console.log("got a multipart request");
-        var boundary = utils.substringAfter(contentType, "boundary=");
+        var boundary = utils.substringAfter(contentType, "boundary=").replace(/"/g, '');
         //console.log("boundary for form-data: " + boundary);
 
         /* we parse the multipart on obtaining the data, it seems that nodejs passes us the data in arbitrary chunks, so the reader needs to keep state over multiple callbacks for on() */
