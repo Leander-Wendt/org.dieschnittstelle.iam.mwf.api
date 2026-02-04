@@ -8,3 +8,10 @@
 /node_modules/
 /www/content/img/*
 /www/content/mov/*
+.idea/copilot.data.migration.agent.xml
+.idea/copilot.data.migration.ask.xml
+.idea/copilot.data.migration.ask2agent.xml
+.idea/copilot.data.migration.edit.xml
+.idea/dataSources.local.xml
+.idea/dataSources.xml
+.idea/dataSources/b86d5bae-5502-4a6d-824f-7489baa4e392.xml
